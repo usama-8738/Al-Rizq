@@ -1,3 +1,7 @@
 # Al-Rizq
-Comprehensive Food Donation app made in Android Studio and Java as base language.
-Firebase used as database.
+Comprehensive Food Donation app for android systems.
+Technologies used:
+Android Studio IDE.
+Java as Base Language.
+Firebase Database.
+Google Play Services.
