@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".termpolicy.TermPolicyActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fiftym"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/background"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:id="@+id/cliclplztwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_round_arrow_back_24" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:srcCompat="@drawable/rizq" />
+
+
+            <TextView
+                android:id="@+id/about"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:text="Al-Rizq is Food Donation android app that is beneficial for Donors and for NGOs.
+Our priority was to minimize hunger in society so that poor people don’t die due to starvation."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>

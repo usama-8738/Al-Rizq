@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginVertical="@dimen/_4sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="3dp"
+        app:contentPadding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:id="@+id/leftreseller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- Media -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foodImage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/ngo" />
+
+            <TextView
+                android:id="@+id/itemName"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:gravity="center"
+                android:maxLength="40"
+                android:text="Rizq"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/qty"
+                style="@style/Textview"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemName"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Quantity :"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/time"
+                style="@style/Textview"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qty"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="Need Before: "
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/Textview"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="We are in need of 15 food packets in Main Road Gujrat Location before 1:30 PM:"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

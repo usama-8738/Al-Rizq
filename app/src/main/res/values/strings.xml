@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Al Rizq</string>
+    <string name="title_activity_donor_home">DonorHomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_resturent">ResturentActivity</string>
+    <string name="terms">Terms &amp; Privacy Policy</string>
+    <string name="bad_response">Something went wrong. Please try again</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="hire_rider">Hire Rider</string>
+</resources>

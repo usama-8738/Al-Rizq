@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="3dp"
+        app:contentPadding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:id="@+id/leftreseller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Media -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foodImage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:src="@drawable/person1" />
+
+
+
+            <ImageView
+                android:id="@+id/delete"
+                android:visibility="gone"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/ic_round_delete_forever_24"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                />
+
+            <TextView
+                android:id="@+id/itemName"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:gravity="center"
+                android:maxLength="40"
+                android:text="Item Name"
+
+                android:textColor="@color/black" />
+
+            <TextView
+
+                android:id="@+id/quantity"
+                style="@style/Textview"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemName"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:text="Quantity: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+
+                android:id="@+id/timeOPrepration"
+                style="@style/Textview"
+                android:layout_below="@+id/quantity"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:text="Time Of Prepration: "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/Textview"
+                android:layout_below="@+id/timeOPrepration"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toEndOf="@+id/foodImage"
+                android:text="Date: "
+                android:textSize="@dimen/_10sdp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

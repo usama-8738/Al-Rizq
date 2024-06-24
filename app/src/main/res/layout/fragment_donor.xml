@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.donor.donation.DonorFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_35sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                style="@style/cardview"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                app:contentPadding="@dimen/_15sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/profile" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/makeDonation"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:backgroundTint="@color/white"
+                android:text="Make a Donation"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/yourDonations"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:text="Your Donations"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/donateAsPay"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:text="Donate as Pay"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteDonation"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:text="Delete Donation"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

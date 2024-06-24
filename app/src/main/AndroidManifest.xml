@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlRizq">
+        <activity
+            android:name=".contactus.ContactActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".termpolicy.TermPolicyActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".editprofile.UserAddress"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.donor.aspay.DonateAsPayActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ngo.hirerider.HireRiderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ngo.publicdonations.PublicDonationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ngo.requesthistory.YourRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".about.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".donationdetail.DonationDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.yourdonation.YourDonationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.admin.UsersList"
+            android:exported="false" />
+        <activity
+            android:name=".request.ConfirmRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.restaurent.donation.DonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BottomNavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_donor_home" />
+        <activity
+            android:name=".forgetpassword.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup.VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".donation.DonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.donor.donations.DonorDonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ngo.request.NGORequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.restaurent.donationrequest.DonationRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userdetails.UserDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.rider.riderrequest.RiderRequestActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".fcm.Notification"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

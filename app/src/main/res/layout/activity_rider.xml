@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.rider.RiderActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Rider"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                style="@style/cardview"
+                android:layout_height="@dimen/_250sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rider" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/request"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:backgroundTint="@color/white"
+                android:text="Requests"
+                android:textSize="@dimen/_14sdp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelRequest"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:backgroundTint="@color/white"
+                android:text="Cancel Requests"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

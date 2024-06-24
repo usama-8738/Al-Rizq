@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/hireCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="3dp"
+        app:contentPadding="@dimen/_8sdp">
+
+        <RelativeLayout
+            android:id="@+id/leftreseller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/rider" />
+
+            <TextView
+                android:id="@+id/ngoName"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_toStartOf="@+id/buttonLayout"
+                android:layout_toEndOf="@+id/userImage"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="40"
+                android:text="NGO"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ngoName"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toStartOf="@+id/buttonLayout"
+                android:layout_toEndOf="@+id/userImage"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Location:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/location"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toStartOf="@+id/buttonLayout"
+                android:layout_toEndOf="@+id/userImage"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Date:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toStartOf="@+id/buttonLayout"
+                android:layout_toEndOf="@+id/userImage"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Status:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:backgroundTint="#f4f4f4"
+                    android:text="Accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/refuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:backgroundTint="#f4f4f4"
+                    android:text="Refuse"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/_20sdp"
+
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:backgroundTint="#f4f4f4"
+                    android:text="Delete"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    app:cornerRadius="@dimen/_20sdp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

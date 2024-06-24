@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".userdetails.UserDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/_25sdp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#f7f5f7"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="3dp"
+                app:contentPadding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:id="@+id/leftreseller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_6sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:src="@drawable/profile" />
+
+                    <TextView
+                        android:id="@+id/userName"
+                        style="@style/Textview"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:maxLength="40"
+                        android:text="Name"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        style="@style/Textview"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Email: "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        style="@style/Textview"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Phone: "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/adress"
+                        style="@style/Textview"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Address: "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/about"
+                        style="@style/Textview"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="About:"
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/aboutData"
+                        style="@style/Textview"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_toEndOf="@+id/foodImage"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:visibility="visible" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/hire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/primary"
+                    android:paddingHorizontal="@dimen/_25sdp"
+                    android:text="Confirm"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/_20sdp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/primary"
+                    android:paddingHorizontal="@dimen/_25sdp"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="@dimen/_20sdp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progress_layout"
+
+        />
+
+
+</RelativeLayout>

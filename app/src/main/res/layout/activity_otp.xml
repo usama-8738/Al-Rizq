@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".signup.OtpActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_120sdp"
+
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Textview"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="Enter Phone Number"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/code_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/black_border1"
+                android:padding="7dp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="true" />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/phoneuser"
+                style="@style/Textinputlayout"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:placeholderText="2021234567"
+                app:startIconTint="@color/primary">
+
+                <EditText
+                    android:id="@+id/phonevalue"
+                    style="@style/inputedittext"
+                    android:background="@drawable/black_border1"
+                    android:digits="0123456789"
+                    android:hint="Phone No."
+                    android:inputType="phone"
+                    android:maxLength="15" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sentotp"
+                style="@style/button"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:backgroundTint="@color/primary"
+                android:text="Send otp"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:id="@+id/otpframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#22FFFFFF"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/otpprogress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:elevation="50dp"
+
+            />
+    </FrameLayout>
+
+</RelativeLayout>

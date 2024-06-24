@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AlRizq" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariant</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/black</item>
+<!--        <item name="android:background">#A6A6A6</item>-->
+    </style>
+
+    <!--    // image view wala kam -->
+    <style name="image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+
+
+    </style>
+
+    <!--    // cardview ka style  //-->
+    <style name="cardview" parent="CardView">
+        <item name="android:layout_height">@dimen/_220sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="backgroundTint">@color/secwhite</item>
+    </style>
+
+    <!--    input layout ka  style -->
+    <style name="Textinputlayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--     // input edit text ka style -->
+    <style name="inputedittext">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--    // textview ka style -->
+    <style name="Textview" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">@dimen/_14sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!--    // button-->
+    <style name="button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginHorizontal" tools:targetApi="o">@dimen/_40sdp</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="cornerRadius">@dimen/_20sdp</item>
+    </style>
+
+    <style name="buttontext" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="cornerRadius">@dimen/_20sdp</item>
+    </style>
+
+</resources>

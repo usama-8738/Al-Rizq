@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/userCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginVertical="@dimen/_4sdp"
+        android:backgroundTint="#f7f5f7"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:id="@+id/leftreseller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:src="@drawable/person1" />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/Textview"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/userImage"
+                android:gravity="center"
+                android:maxLength="40"
+                android:text="Name"
+
+                android:textColor="@color/black" />
+
+            <TextView
+
+                android:id="@+id/userEmail"
+                style="@style/Textview"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@+id/userImage"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+
+                android:id="@+id/userAddress"
+                style="@style/Textview"
+                android:layout_below="@+id/userEmail"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toEndOf="@+id/userImage"
+                android:maxLines="2"
+                android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/block"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="0dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Block"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/unblock"
+                    style="@style/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginHorizontal="0dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Unblock"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

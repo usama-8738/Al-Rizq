@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".request.ConfirmRequestActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="Confirm Reuests"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/rider" />
+
+
+            <TextView
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Rizq"
+                android:textAlignment="center"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                style="@style/Textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Quantity:"
+                android:textColor="@color/black" />
+
+            <TextView
+
+
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Location"
+                android:textColor="@color/black" />
+
+
+            <TextView
+
+
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Need Before"
+                android:textColor="@color/black" />
+
+
+            <TextView
+
+
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Description"
+                android:textColor="@color/black" />
+
+            <TextView
+
+                style="@style/Textview"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="We are in need of 15 food packets in Main Road Gujrat Location before 1:30 PM:"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

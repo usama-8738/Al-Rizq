@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".signup.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/login_container"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Textview"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:text="Register:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name"
+                        style="@style/Textinputlayout"
+                        android:hint="Name">
+
+                        <EditText
+                            style="@style/inputedittext"
+                            android:background="@drawable/black_border1"
+                            android:inputType="textPersonName"
+                            android:maxLength="50" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phone"
+                        style="@style/Textinputlayout"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <EditText
+                            style="@style/inputedittext"
+                            android:background="@drawable/black_border1"
+                            android:digits="0123456789"
+                            android:hint="Phone Number"
+                            android:inputType="phone"
+                            android:maxLength="16" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <RadioButton
+                            android:id="@+id/donor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Donor" />
+
+                        <RadioButton
+                            android:id="@+id/ngo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="NGO" />
+
+                        <RadioButton
+                            android:id="@+id/resturent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resturent" />
+
+                        <RadioButton
+                            android:id="@+id/rider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rider" />
+
+                    </RadioGroup>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email"
+                        style="@style/Textinputlayout"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:hint="Email id">
+
+                        <EditText
+
+                            style="@style/inputedittext"
+                            android:background="@drawable/black_border1"
+                            android:inputType="textEmailAddress"
+                            android:lines="1" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/password"
+                        style="@style/Textinputlayout"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:hint="Password"
+                        app:endIconMode="password_toggle">
+
+                        <EditText
+                            style="@style/inputedittext"
+                            android:layout_toStartOf="@+id/editpasswordtoggle"
+                            android:background="@drawable/black_border1"
+                            android:inputType="textPassword" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/retypePassword"
+                        style="@style/Textinputlayout"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:hint="Retype Password"
+                        app:endIconMode="password_toggle">
+
+                        <EditText
+                            style="@style/inputedittext"
+                            android:layout_toStartOf="@+id/editpasswordtoggle"
+                            android:background="@drawable/black_border1"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submit"
+                        style="@style/button"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:backgroundTint="@color/primary"
+                        android:text="Submit"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:id="@+id/txt"
+                        style="@style/Textview"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Sign in instead"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/primary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progress_layout" />
+
+</RelativeLayout>
