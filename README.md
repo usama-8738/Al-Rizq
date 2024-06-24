@@ -34,7 +34,7 @@ To get a local copy up and running, follow these steps:
 
 ### Clone the Repository
 
-git clone https://github.com/your-username/al-rizq.git
+git clone https://github.com/usama-8738/Al-Rizq
 
 ## Open in Android Studio
 - Open Android Studio.
